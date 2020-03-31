@@ -1,0 +1,18 @@
+<div fxLayout="row">
+    <div fxFlex="50px">
+        <button mat-button [matMenuTriggerFor]="menu">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item>item1</button>
+            <button mat-menu-item>item2</button>
+        </mat-menu>
+    </div>
+    <div fxFlex>
+        <h1>Danh mục</h1>
+    </div>
+    <div fxFlex="80px">
+        Hình ảnh
+    </div>
+
+</div>
