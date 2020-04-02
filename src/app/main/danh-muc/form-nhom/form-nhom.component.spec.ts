@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { QuanLyMenuComponent } from './quan-ly-menu.component';
+import { FormNhomComponent } from './form-nhom.component';
 
-describe('QuanLyMenuComponent', () => {
-  let component: QuanLyMenuComponent;
-  let fixture: ComponentFixture<QuanLyMenuComponent>;
+describe('FormNhomComponent', () => {
+  let component: FormNhomComponent;
+  let fixture: ComponentFixture<FormNhomComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ QuanLyMenuComponent ]
+      declarations: [ FormNhomComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(QuanLyMenuComponent);
+    fixture = TestBed.createComponent(FormNhomComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

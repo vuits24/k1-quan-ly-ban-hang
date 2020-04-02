@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { MenuModule } from './layout/menu/menu.module';
 import { DanhMucModule } from './main/danh-muc/danh-muc.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {HangHoaModule} from './main/hang-hoa/hang-hoa.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     MenuModule,
     DanhMucModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HangHoaModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,39 +1,105 @@
 <div class="container">
-    <div fxLayout="row">
-        <div fxFlex="auto">
-            <mat-form-field class="full-width">
-                <input matInput placeholder="Tìm kiếm">
-            </mat-form-field>
-        </div>
-        <div fxFlex="50px">
-            <button mat-icon-button color="primary">
-                <mat-icon>fullscreen</mat-icon>
-            </button>
-        </div>
+  <div fxLayout="row">
+    <div fxFlex="auto">
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Tìm kiếm">
+      </mat-form-field>
     </div>
-
-    <div fxLayout="column">
-        <h2>Danh sách (Thêm mới)</h2>
-        <div fxFlex>
-            <mat-tab-group>
-                <mat-tab label="Danh mục">
-                    <div fxLayout="column">
-                        <div fxFlex>
-                            <mat-card>
-                                <div fxLayout="row">
-                                    <div fxFlex="50"><strong>Mã:</strong> 00001</div>
-                                    <div fxFlex="50"><strong>Nhóm:</strong> Áo dài</div>
-                                </div>
-                            </mat-card>
-                        </div>
-
-
-                    </div>
-                </mat-tab>
-                <mat-tab label="Nhóm">Content 2</mat-tab>
-                <mat-tab label="Kích thước">Content 2</mat-tab>
-                <mat-tab label="Đơn vị tính">Content 2</mat-tab>
-            </mat-tab-group>
-        </div>
+    <div fxFlex="50px">
+      <button mat-icon-button color="primary">
+        <mat-icon>fullscreen</mat-icon>
+      </button>
     </div>
+  </div>
+
+  <div fxLayout="column">
+    <h2>Danh sách ( <a href="javacript:" (click)="fThongTinForm()"> Thêm mới</a> )</h2>
+    <div fxFlex class="danh-muc">
+      <mat-tab-group (selectedIndexChange)="fLayIndexTab($event)" [selectedIndex]="indexTab">
+        <mat-tab label="Danh mục">
+          <div fxLayout="column" fxLayoutGap="10px">
+            <div fxFlex *ngFor="let i of [1,2,3,4,5,6,7]">
+              <mat-card>
+                <button mat-icon-button style="position: absolute; right: 0;top: 0;">
+                  <mat-icon>delete</mat-icon>
+                </button>
+                <div fxLayout="row">
+                  <div fxFlex="50"><strong>Mã:</strong> 00001</div>
+                  <div fxFlex="50"><strong>Nhóm:</strong> Áo dài</div>
+                </div>
+                <div fxLayout="row">
+                  <div fxFlex="100"><strong>Tên:</strong> Áo dài mã 00001</div>
+                </div>
+                <div fxLayout="row">
+                  <div fxFlex="50"><strong>Kích thước:</strong> XXL</div>
+                  <div fxFlex="50"><strong>Màu sắc:</strong> < Trống ></div>
+                </div>
+                <div fxLayout="row">
+                  <div fxFlex="50"><strong>Chất liệu:</strong> < Trống ></div>
+                  <div fxFlex="50"><strong>ĐVT:</strong> Cái</div>
+                </div>
+                <div fxLayout="row">
+                  <div fxFlex="50"><strong>Đơn giá lẻ:</strong> 0</div>
+                  <div fxFlex="50"><strong>Đơn giá buôn</strong> 0</div>
+                </div>
+              </mat-card>
+            </div>
+
+
+          </div>
+        </mat-tab>
+        <mat-tab label="Nhóm">
+          <div fxLayout="column" fxLayoutGap="10px">
+            <div fxFlex *ngFor="let i of [1,2,3,4,5,6,7]">
+              <mat-card>
+                <button mat-icon-button style="position: absolute; right: 0;top: 0;">
+                  <mat-icon>delete</mat-icon>
+                </button>
+                <div fxLayout="column">
+                  <div fxFlex><strong>Mã:</strong> 00001</div>
+                  <div fxFlex><strong>Tên:</strong> Áo dài</div>
+                </div>
+
+              </mat-card>
+            </div>
+
+
+          </div>
+        </mat-tab>
+        <mat-tab label="Kích thước">
+          <div fxLayout="column" fxLayoutGap="10px">
+            <div fxFlex *ngFor="let i of [1,2,3,4,5,6,7]">
+              <mat-card>
+                <button mat-icon-button style="position: absolute; right: 0;top: 0;">
+                  <mat-icon>delete</mat-icon>
+                </button>
+                <div fxLayout="column">
+                  <div fxFlex><strong>Tên:</strong> XXL</div>
+                </div>
+
+              </mat-card>
+            </div>
+
+
+          </div>
+        </mat-tab>
+        <mat-tab label="Đơn vị tính">
+          <div fxLayout="column" fxLayoutGap="10px">
+            <div fxFlex *ngFor="let i of [1,2,3,4,5,6,7]">
+              <mat-card>
+                <button mat-icon-button style="position: absolute; right: 0;top: 0;">
+                  <mat-icon>delete</mat-icon>
+                </button>
+                <div fxLayout="column">
+                  <div fxFlex><strong>Tên:</strong> Chiếc</div>
+                </div>
+
+              </mat-card>
+            </div>
+          </div>
+
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+  </div>
 </div>

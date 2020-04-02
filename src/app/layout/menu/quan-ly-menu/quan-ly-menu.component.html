@@ -1,18 +1,25 @@
-<div fxLayout="row">
-    <div fxFlex="50px">
+<div fxLayout="row" style="margin-top: 10px">
+    <div fxFlex="90px">
         <button mat-button [matMenuTriggerFor]="menu">
             <mat-icon>menu</mat-icon>
         </button>
         <mat-menu #menu="matMenu">
-            <button mat-menu-item>item1</button>
-            <button mat-menu-item>item2</button>
+            <a mat-menu-item routerLink="/hang-hoa">Hàng hóa</a>
+            <button mat-menu-item>Lịch sử</button>
+            <a routerLink="/danh-muc" mat-menu-item>Danh mục</a>
+            <button mat-menu-item>Đối tác</button>
         </mat-menu>
     </div>
     <div fxFlex>
         <h1>Danh mục</h1>
     </div>
     <div fxFlex="80px">
-        Hình ảnh
+      <button mat-icon-button>
+        <img style="width: 100%; height: 100%; border: 1px solid #999b9e; border-radius: 50%;" src="assets/images/logo.png" alt="Logo" />
+
+      </button>
+
+
     </div>
 
 </div>

@@ -1,0 +1,71 @@
+<div class="container">
+  <div fxLayout="row">
+    <div fxFlex>
+      <mat-form-field class="full-width">
+        <mat-label> Đơn hàng</mat-label>
+        <input type="text"
+               aria-label="Number"
+               matInput
+               [matAutocomplete]="sohoadonx">
+        <mat-autocomplete #sohoadonx="matAutocomplete">
+          <mat-option *ngFor="let option of [1,2,3,4,5,6]" [value]="option">
+            SHD000{{option}}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+    </div>
+    <div fxFlex="80px">
+
+      <mat-menu #hanghoaMenu="matMenu">
+        <button mat-menu-item>Đơn hàng</button>
+        <button mat-menu-item>Thu chi</button>
+      </mat-menu>
+      <button mat-button [matMenuTriggerFor]="hanghoaMenu">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+  </div>
+  <div fxLayout="column">
+    <mat-tab-group>
+      <mat-tab label="Danh mục">
+        <div fxFlex fxLayout="column" fxLayoutGap="10px">
+          <div fxFlex *ngFor="let i of [1,2,3,4,5]">
+            <mat-card>
+
+              <div fxLayout="row" fxLayoutGap="10px">
+                <div fxFlex="50"><strong>Mã:</strong> 0001</div>
+                <div fxFlex="50"><strong>Nhóm:</strong> Nhóm 1</div>
+              </div>
+
+              <div fxLayout="row" fxLayoutGap="10px">
+                <div fxFlex fxFlexFill><strong>Tên:</strong> Áo dài</div>
+              </div>
+
+              <div fxLayout="row" fxLayoutGap="10px">
+                <div fxFlex="50"><strong>Kích thước:</strong> XXL</div>
+                <div fxFlex="50"><strong>Màu sắc:</strong> < Trỗng ></div>
+              </div>
+
+              <div fxLayout="row" fxLayoutGap="10px">
+                <div fxFlex fxFlexFill><strong>Chất liệu:</strong> < Trỗng ></div>
+              </div>
+
+              <div fxLayout="row" fxLayoutGap="10px">
+                <div fxFlex fxFlexFill><strong>Đơn vị tính:</strong> Cái</div>
+              </div>
+
+              <div fxLayout="row" fxLayoutGap="10px">
+                <div fxFlex="50"><strong>Giá bán lẻ:</strong> 30.000</div>
+                <div fxFlex="50"><strong>Giá bán buôn:</strong> 29.000</div>
+              </div>
+
+            </mat-card>
+          </div>
+        </div>
+      </mat-tab>
+      <mat-tab label="Sản phẩm đã chọn">
+        Tab1 content
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+</div>

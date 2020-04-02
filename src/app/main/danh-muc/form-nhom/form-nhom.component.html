@@ -1,0 +1,17 @@
+<header>
+  <h2>Thông tin nhóm<button mat-icon-button style="float:right" mat-dialog-close> <mat-icon>close</mat-icon> </button> </h2>
+</header>
+<div fxFill fxLayoutGap="10px">
+  <mat-form-field class="full-width">
+    <mat-label>Mã</mat-label>
+    <input matInput placeholder="0001" value="0001">
+  </mat-form-field>
+  <mat-form-field class="full-width">
+    <mat-label>Tên</mat-label>
+    <input matInput>
+  </mat-form-field>
+  <div fxLayout="row" fxLayoutGap="10px" fxFlexAlign="end center">
+    <button fxFlex mat-button mat-raised-button color="warn" mat-dialog-close>Hủy</button>
+    <button fxFlex mat-button mat-raised-button color="primary">Cập nhật</button>
+  </div>
+</div>

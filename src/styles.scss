@@ -1,10 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-.full-width {
-    width: 100%;
+html, body {
+  height: 100%;
 }
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.full-width {
+  width: 100%;
+}
+
 .container {
+  padding: 0 10px;
+  margin: 10px;
+}
+
+a {
+  text-decoration: unset;
+}
+
+.dialog-full-width {
+  max-width: 99vw;
+  max-height: 99vh;
+  margin: 10px;
+  padding: 10px;
+}
+.danh-muc {
+  .mat-tab-label{
     padding: 0 10px;
+  }
+
 }

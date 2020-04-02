@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { QuanLyDanhMucComponent } from './quan-ly-danh-muc.component';
+import { FormDanhMucComponent } from './form-danh-muc.component';
 
-describe('QuanLyDanhMucComponent', () => {
-  let component: QuanLyDanhMucComponent;
-  let fixture: ComponentFixture<QuanLyDanhMucComponent>;
+describe('FormDanhMucComponent', () => {
+  let component: FormDanhMucComponent;
+  let fixture: ComponentFixture<FormDanhMucComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ QuanLyDanhMucComponent ]
+      declarations: [ FormDanhMucComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(QuanLyDanhMucComponent);
+    fixture = TestBed.createComponent(FormDanhMucComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

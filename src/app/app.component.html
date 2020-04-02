@@ -1,6 +1,13 @@
-<header>
-  <app-quan-ly-menu></app-quan-ly-menu>
-</header>
-<main>
-  <router-outlet> </router-outlet>
-</main>
+<div *ngIf="!isMobile; else ungdungMobile">
+  <h2 style="text-align: center; color: red;">Không hỗ trợ!</h2>
+</div>
+
+<ng-template name="success" #ungdungMobile>
+  <header>
+    <app-quan-ly-menu></app-quan-ly-menu>
+  </header>
+  <main>
+    <router-outlet> </router-outlet>
+  </main>
+</ng-template>
+
