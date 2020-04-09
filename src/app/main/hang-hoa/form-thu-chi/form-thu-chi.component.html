@@ -1,0 +1,36 @@
+<div fxLayout="column" fxLayoutGap="10px">
+  <div fxFlex><strong>Khách hàng:</strong> Khách lẻ</div>
+  <div fxFlex><strong>Địa chỉ:</strong> Hà nội</div>
+  <div fxFlex>
+    <div fxFlex fxLayout="row" fxLayoutGap="10px">
+      <div fxFlex="50"><strong>Điện thoại:</strong> 0989809894</div>
+      <div fxFlex="50"><strong>Email:</strong> < Rỗng ></div>
+    </div>
+  </div>
+  <mat-form-field>
+    <mat-label>Hình thức thanh toán</mat-label>
+    <mat-select>
+      <mat-option>TM</mat-option>
+      <mat-option>CK</mat-option>
+      <mat-option>Thẻ</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <div fxFlex>
+    <mat-form-field class="full-width">
+      <mat-label>Thanh toán</mat-label>
+      <input matInput />
+    </mat-form-field>
+  </div>
+  <div fxFlex> <strong>Trả lại:</strong> 0 </div>
+  <div fxFlex>
+    <mat-form-field class="full-width">
+      <mat-label>Diễn giải</mat-label>
+      <input matInput />
+    </mat-form-field>
+  </div>
+  <div fxFlex fxLayout="row" fxLayoutGap="10px" fxFlexAlign="end center">
+    <button fxFlex mat-button mat-raised-button color="warn" mat-dialog-close>Hủy</button>
+    <button fxFlex mat-button mat-raised-button color="primary" (click)="fFormXacNhan()">Cập nhật</button>
+  </div>
+
+</div>

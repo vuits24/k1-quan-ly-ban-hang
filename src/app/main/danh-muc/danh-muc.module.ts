@@ -16,11 +16,6 @@ import { FormKichThuocComponent } from './form-kich-thuoc/form-kich-thuoc.compon
 import { FormDonViTinhComponent } from './form-don-vi-tinh/form-don-vi-tinh.component';
 const route: Routes = [
   {
-    path: '',
-    component: QuanLyDanhMucComponent,
-    pathMatch: 'full'
-  },
-  {
     path: 'danh-muc',
     component: QuanLyDanhMucComponent,
     pathMatch: 'full'

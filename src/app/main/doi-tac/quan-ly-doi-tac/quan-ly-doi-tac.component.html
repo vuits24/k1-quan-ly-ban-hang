@@ -1,0 +1,47 @@
+<div class="container">
+  <div fxLayout="row">
+    <div fxFlex="100">
+      <mat-radio-group aria-label="Chọn" value="1">
+        <mat-radio-button value="1">Khách hàng</mat-radio-button>
+        <mat-radio-button value="2">Nhà cung cấp</mat-radio-button>
+      </mat-radio-group>
+    </div>
+  </div>
+  <div fxLayout="row">
+  <div fxFlex="auto">
+    <mat-form-field class="full-width">
+      <mat-label>Tìm kiếm</mat-label>
+      <input matInput >
+    </mat-form-field>
+  </div>
+  <div fxFlex="40px">
+    <button mat-icon-button>
+      <mat-icon class="mat-18">search</mat-icon>
+    </button>
+  </div>
+  </div>
+  <div fxLayout="row">
+    <div fxFlex="100">
+      <h3>Danh sách (<a href="javascript:" (click)="vCapNhatDoiTac()">Thêm mới </a>) </h3>
+    </div>
+  </div>
+  <div fxLayout="column" fxLayoutGap="10px">
+    <div fxFlex *ngFor="let i of [1,2,3,4,5,6,7]">
+      <mat-card>
+        <button mat-icon-button style="position: absolute; right: 0;top: 0;">
+          <mat-icon>delete</mat-icon>
+        </button>
+        <div fxLayout="row">
+          <div fxFlex="100"><strong>Khách hàng:</strong> Khách lẻ</div>
+        </div>
+        <div fxLayout="row">
+          <div fxFlex="100"><strong>Địa chỉ:</strong> Hà nội</div>
+        </div>
+        <div fxLayout="row">
+          <div fxFlex="50"><strong>Điện thoại:</strong>09090934</div>
+          <div fxFlex="50"><strong>Email:</strong> < Trống ></div>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+</div>

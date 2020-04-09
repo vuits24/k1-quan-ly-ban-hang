@@ -10,14 +10,24 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatButtonModule} from '@angular/material/button';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatCardModule} from '@angular/material/card';
+import { ThanhToanComponent } from './thanh-toan/thanh-toan.component';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatSelectModule} from '@angular/material/select';
+import {MatDialogModule} from '@angular/material/dialog';
+import { QuanLyThuChiComponent } from './quan-ly-thu-chi/quan-ly-thu-chi.component';
+import { FormThuChiComponent } from './form-thu-chi/form-thu-chi.component';
+import {MatRadioModule} from '@angular/material/radio';
+import { XacNhanThuChiComponent } from './xac-nhan-thu-chi/xac-nhan-thu-chi.component';
 
 const route: Routes = [
+  {path: '', component: QuanLyHangHoaComponent, pathMatch: 'full'},
   {path: 'hang-hoa', component: QuanLyHangHoaComponent, pathMatch: 'full'}
+
 ];
 
 
 @NgModule({
-  declarations: [QuanLyHangHoaComponent],
+  declarations: [QuanLyHangHoaComponent, ThanhToanComponent, QuanLyThuChiComponent, FormThuChiComponent, XacNhanThuChiComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(route),
@@ -28,7 +38,15 @@ const route: Routes = [
     MatAutocompleteModule,
     MatButtonModule,
     MatTabsModule,
-    MatCardModule
+    MatCardModule,
+    MatCheckboxModule,
+    MatSelectModule,
+    MatDialogModule,
+    MatRadioModule
+  ],
+  entryComponents: [
+    ThanhToanComponent,
+    XacNhanThuChiComponent
   ]
 })
 export class HangHoaModule {

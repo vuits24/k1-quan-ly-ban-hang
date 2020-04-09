@@ -11,7 +11,7 @@ import {FormDonViTinhComponent} from '../form-don-vi-tinh/form-don-vi-tinh.compo
   styleUrls: ['./quan-ly-danh-muc.component.scss']
 })
 export class QuanLyDanhMucComponent implements OnInit {
-  indexTab = 1;
+  indexTab = 0;
   constructor(
     private vDialog: MatDialog
   ) {

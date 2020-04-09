@@ -1,0 +1,32 @@
+<div class="container">
+  <div fxLayout="row" fxLayoutGap="10px">
+    <div fxFlex="40">
+      <mat-form-field class="full-width">
+        <mat-label>Ngày từ</mat-label>
+        <input matInput [matDatepicker]="ngayTu">
+        <mat-datepicker-toggle matSuffix [for]="ngayTu"></mat-datepicker-toggle>
+        <mat-datepicker #ngayTu></mat-datepicker>
+      </mat-form-field>
+    </div>
+    <div fxFlex="40">
+      <mat-form-field class="full-width">
+        <mat-label>Ngày đến</mat-label>
+        <input matInput [matDatepicker]="ngayDen">
+        <mat-datepicker-toggle matSuffix [for]="ngayDen"></mat-datepicker-toggle>
+        <mat-datepicker #ngayDen></mat-datepicker>
+      </mat-form-field>
+    </div>
+    <div fxFlex="auto">
+      <button mat-icon-button>
+        <mat-icon class="mat-18">search</mat-icon>
+      </button>
+    </div>
+  </div>
+  <div fxLayout="column" fxLayoutGap="10px">
+    <mat-tab-group>
+      <mat-tab label="Đơn hàng"><app-don-hang></app-don-hang> </mat-tab>
+      <mat-tab label="Thu chi">  <app-thu-chi></app-thu-chi> </mat-tab>
+      <mat-tab label="Công nơ">  <app-cong-no></app-cong-no> </mat-tab>
+    </mat-tab-group>
+  </div>
+</div>

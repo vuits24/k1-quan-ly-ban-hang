@@ -1,0 +1,24 @@
+<div class="container">
+  <div fxLayout="row"  fxFlexAlign="end center">
+    <div fxFlex>  <strong>Tổng tiền:</strong> 30.000 </div>
+   </div>
+  <div fxLayout="column" fxLayoutGap="10px">
+    <div fxFlex *ngFor="let i of [1,2,3,4,5,6,7]">
+      <mat-card>
+        <button mat-icon-button style="position: absolute; right: 0;top: 0;">
+          <mat-icon>check_box</mat-icon>
+        </button>
+        <div fxLayout="row">
+          <div fxFlex="100"><strong>Mã khách hàng:</strong> KH099938</div>
+        </div>
+        <div fxLayout="row">
+          <div fxFlex="100"><strong>Khách hàng:</strong> Khách lẻ</div>
+        </div>
+
+        <div fxLayout="row">
+          <div fxFlex="100"><strong>Tổng tiền:</strong>09090934</div>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+</div>

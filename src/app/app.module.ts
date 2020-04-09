@@ -7,6 +7,8 @@ import { MenuModule } from './layout/menu/menu.module';
 import { DanhMucModule } from './main/danh-muc/danh-muc.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {HangHoaModule} from './main/hang-hoa/hang-hoa.module';
+import {DoiTacModule} from './main/doi-tac/doi-tac.module';
+import {LichSuModule} from './main/lich-su/lich-su.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import {HangHoaModule} from './main/hang-hoa/hang-hoa.module';
     MenuModule,
     DanhMucModule,
     BrowserAnimationsModule,
-    HangHoaModule
+    HangHoaModule,
+    DoiTacModule,
+    LichSuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
